@@ -63,13 +63,16 @@
           padding: "10px"
         }
         // No need to change anything ABOVE this line ^
-
+        //added JSX fragment to contain return statement.
+        //added drawCard function to Draw a Card button.
+        //changed onclick in line 75 to onClick to declare function.
         return (
+          <>  
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,6 +84,7 @@
               )
             })}
           </div>
+          </>
         )
       }
 
